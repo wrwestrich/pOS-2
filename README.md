@@ -1,2 +1,3 @@
 # pOS-2
-TBD
+
+Run `make build` to build.
