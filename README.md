@@ -1,3 +1,5 @@
 # pOS-2
 
-Run `make build` to build.
+Based off of [this](https://os.phil-opp.com/) blog.
+
+More info TBD.

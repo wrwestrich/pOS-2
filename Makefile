@@ -1,6 +1,7 @@
-TARGET := thumbv7em-none-eabihf
-
-.PHONY: build
+.PHONY: build run
 
 build:
-	cargo build --target $(TARGET)
+	cargo bootimage
+
+run: build
+	qemu-system-x86_64 -drive format=raw,file=target/x86_64-p_os_2/debug/bootimage-p_os_2.bin
